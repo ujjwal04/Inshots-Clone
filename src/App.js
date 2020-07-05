@@ -4,15 +4,15 @@ import Admin from "./components/Admin";
 import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
-import {BrowserRouter,Route} from "react-router-dom";
+import {HashRouter,Route} from "react-router-dom";
 
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Route path='/' exact component = {Feed}/>
       <Route path='/admin' component = {Admin}/>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
